@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("/fonts/PermanentMarker-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  /* Color Variables */
+  --color-primary-purple: #7812de; /* RGB: 120, 18, 222 */
+  --color-primary-purple-dark: #962eff; /* RGB: 150, 46, 255 */
+  --color-primary-blue: #576bc9; /* RGB: 87, 107, 201 */
+  --color-secondary-orange: #ffbd12; /* RGB: 255, 189, 18 */
+  --color-secondary-red: #fa6647; /* RGB: 250, 102, 71 */
+  --color-secondary-red-dark: #f592b; /* RGB: 250, 89, 43 */
+  --color-neutral-white: #ffffff; /* RGB: 255, 255, 255 */
+  --color-neutral-black: #1c1c1c; /* RGB: 28, 28, 28 */
+  --color-neutral-gray: #c4c4c4; /* RGB: 196, 196, 196 */
+  --color-neutral-dark-gray: #0f2621; /* RGB: 15, 38, 33 */
+  --color-neutral-brown: #474a57; /* RGB: 71, 74, 87 */
+  --color-neutral-teal: #1cdbc4; /* RGB: 28, 219, 196 */
+  --color-neutral-yellow: #ff0bd; /* RGB: 255, 176, 189 */
+
+  /* Font Variables */
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-weight-regular: 400; /* 16x usage */
+  --font-weight-bold: 700; /* 32x usage */
+  --font-weight-medium: 500; /* 30x usage */
+  --font-weight-black: 900; /* 13x usage */
+  --font-weight-semibold: 600; /* 4x usage */
+  --font-family-permanent-marker: "Permanent Marker", cursive;
+  --font-weight-regular-pm: 400; /* 6x usage */
+
+  /* Font Size Variables */
+  --font-size-base: 16px; /* 17x usage */
+  --font-size-large: 18px; /* 37x usage */
+  --font-size-medium: 15px; /* 4x usage */
+  --font-size-small: 11px; /* 11x usage */
+  --font-size-heading: 20px; /* 7x usage */
+  --font-size-subheading: 24px; /* 5x usage */
+  --font-size-extra-large: 25px; /* 2x usage */
+  --font-size-jumbo: 26px; /* 4x usage */
+  --font-size-display: 30px; /* 4x usage */
+  --font-size-extra-display: 45px; /* 5x usage */
+  --font-size-huge: 70px; /* 1x usage */
+  --font-size-custom-1: 17px; /* 1x usage */
+  --font-size-custom-2: 17px; /* 3x usage */
+  --font-size-custom-3: 2px; /* 5x usage (likely a typo, adjust if needed) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: var(--font-size-base);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
