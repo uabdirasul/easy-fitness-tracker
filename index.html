@@ -12,7 +12,45 @@
 </head>
 
 <body>
-  <h1>Hello "Easy"</h1>
+  <header class="header">
+    <div class="container">
+
+      <a href="/">
+        <img src="./images/logo.png" alt="Easy Fitness Tracker icon" class="header__logo" width="52" height="52"
+          srcset="/images/logo.png 1x, /images/logo@2x.png 2x">
+      </a>
+
+      <div class="header__icons">
+        <div class="social__icons">
+          <a href="#">
+            <img src="./images/facebook-icon.svg" alt="facebook icon" class="header__icon" width="24" height="24">
+          </a>
+          <a href="#">
+            <img src="./images/linkedin-icon.svg" alt="linkedin icon" class="header__icon" width="24" height="24">
+          </a>
+          <a href="#">
+            <img src="./images/google-icon.svg" alt="google icon" class="header__icon" width="24" height="24">
+          </a>
+        </div>
+
+        <div class="burger-container">
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger">
+            <span class="burger-line"></span>
+          </label>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">About</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Projects</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
