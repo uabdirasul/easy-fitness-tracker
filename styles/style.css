@@ -83,7 +83,9 @@
   --font-size-custom-3: 2px; /* 5x usage (likely a typo, adjust if needed) */
 }
 
-* {
+*,
+:before,
+:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -104,10 +106,11 @@ a {
 }
 
 .container {
-  width: 85%;
+  width: clamp(85%, 60vw, 95%);
   margin: 0 auto;
 }
 
+/* /header */
 .header {
   background-color: var(--color-primary-purple);
   display: flex;
@@ -256,3 +259,110 @@ a {
 .header__menu-item:hover .header__menu-link {
   color: var(--color-neutral-white);
 }
+/* /header */
+
+/* main */
+/* /main */
+
+/* hero */
+.hero {
+  background-color: var(--color-primary-purple);
+  padding: 5rem 0;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__texts {
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero__title {
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-size: clamp(3rem, 5vw, 4.375rem);
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: var(--color-neutral-white);
+}
+
+.hero__description {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--color-neutral-white);
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__button {
+  background-color: var(--color-neutral-white);
+  clip-path: polygon(
+    22% 6%,
+    68% 4%,
+    100% 0,
+    100% 100%,
+    62% 93%,
+    22% 95%,
+    0 97%,
+    0 3%
+  );
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  padding: 0.7rem 1.5rem;
+  transition: background-color 0.3s ease-in-out;
+  color: var(--color-neutral-black);
+  border: 2px solid var(--color-neutral-black);
+}
+
+.hero__button:hover {
+  background-color: var(--color-primary-purple-dark);
+  color: var(--color-neutral-white);
+}
+
+.hero__button-text {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 40rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__buttons {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+/* /hero */
