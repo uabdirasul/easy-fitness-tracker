@@ -365,4 +365,9 @@ a {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .hero__button {
+    padding: 0.5rem;
+  }
+}
 /* /hero */
