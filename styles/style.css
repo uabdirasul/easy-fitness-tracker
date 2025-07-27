@@ -555,3 +555,69 @@ a {
   }
 }
 /* /newsletter */
+
+/* stories */
+.stories {
+  padding: 3rem 0;
+}
+
+.stories .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.stories__title {
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 2.875rem);
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.stories__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.stories__card {
+  max-width: 23.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.stories__card-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.stories__card-description {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 5vw, 1.125rem);
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.stories__card-date {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 5vw, 1.125rem);
+  line-height: 145%;
+  letter-spacing: 0.02em;
+}
+/* /stories */
