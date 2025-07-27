@@ -621,3 +621,158 @@ a {
   letter-spacing: 0.02em;
 }
 /* /stories */
+
+/* plans */
+.plans {
+  padding: 3rem 0;
+}
+
+.plans .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.plans__description {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: clamp(1rem, 5vw, 1.25rem);
+  line-height: 145%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-neutral-brown);
+}
+
+.plans__title {
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 2.875rem);
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.plans__buttons {
+  border: 2px solid var(--color-neutral-black);
+  border-radius: 1rem;
+  display: flex;
+}
+
+.plans__divider {
+  width: 2px;
+  background-color: var(--color-neutral-black);
+}
+
+.plans__button {
+  padding: 0.5rem 1rem;
+  width: 10ch;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color-neutral-white);
+}
+
+.plans__button:first-of-type {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.plans__button:last-of-type {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.plans__radio {
+  display: none;
+}
+
+.plans__radio:checked + .plans__button {
+  background-color: var(--color-secondary-orange);
+  color: var(--color-neutral-white);
+}
+
+.plans__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.plans__item {
+  max-width: 17.5rem;
+  width: 100%;
+  background-color: var(--color-secondary-orange);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  clip-path: polygon(50% 0%, 100% 0, 98% 78%, 100% 100%, 0 100%, 2% 23%, 0 0);
+}
+
+.plans__item-title {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+}
+
+.plans__item-price {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--color-neutral-black);
+}
+
+.plans__item-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plans__item-feature {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+  color: var(--color-neutral-black);
+  list-style-type: none;
+}
+
+.plans__item-button {
+  background-color: var(--color-neutral-white);
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  clip-path: polygon(
+    22% 6%,
+    68% 4%,
+    100% 0,
+    100% 100%,
+    62% 93%,
+    22% 95%,
+    0 97%,
+    0 3%
+  );
+}
+
+/* /plans */
