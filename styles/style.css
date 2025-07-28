@@ -89,6 +89,42 @@ a {
   text-decoration: none;
 }
 
+/* section__button */
+.section__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.section__button {
+  clip-path: polygon(
+    22% 6%,
+    68% 4%,
+    100% 0,
+    100% 100%,
+    62% 93%,
+    22% 95%,
+    0 97%,
+    0 3%
+  );
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  padding: 0.7rem 1.5rem;
+  transition: background-color 0.3s ease-in-out;
+  border: 2px solid var(--color-neutral-black);
+}
+
+.section__button-text {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+}
+/* /section__button */
+
 .container {
   width: clamp(85%, 60vw, 95%);
   margin: 0 auto;
@@ -288,45 +324,14 @@ a {
   color: var(--color-neutral-white);
 }
 
-.hero__buttons {
-  display: flex;
-  gap: 1rem;
-}
-
 .hero__button {
   background-color: var(--color-neutral-white);
-  clip-path: polygon(
-    22% 6%,
-    68% 4%,
-    100% 0,
-    100% 100%,
-    62% 93%,
-    22% 95%,
-    0 97%,
-    0 3%
-  );
-  border-radius: 0.625rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: space-between;
-  padding: 0.7rem 1.5rem;
-  transition: background-color 0.3s ease-in-out;
   color: var(--color-neutral-black);
-  border: 2px solid var(--color-neutral-black);
 }
 
 .hero__button:hover {
   background-color: var(--color-primary-purple-dark);
   color: var(--color-neutral-white);
-}
-
-.hero__button-text {
-  font-family: Montserrat;
-  font-weight: 900;
-  font-size: 1rem;
-  line-height: 100%;
-  letter-spacing: 0.02em;
 }
 
 .hero__img {
@@ -347,7 +352,7 @@ a {
     text-align: center;
   }
 
-  .hero__buttons {
+  .section__buttons {
     width: 100%;
     justify-content: space-evenly;
   }
@@ -776,3 +781,139 @@ a {
 }
 
 /* /plans */
+
+/* promo */
+.promo {
+  padding: 2rem 0;
+}
+
+.promo .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.promo__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 25rem;
+}
+
+.promo__title {
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-size: 2.875rem;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: var(--color-neutral-black);
+}
+
+.promo__description {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--color-neutral-brown);
+}
+
+.promo__buttons {
+  gap: 1.5rem;
+}
+
+.promo__button {
+  background-color: var(--color-secondary-red);
+  color: var(--color-neutral-white);
+}
+
+.promo__button:hover {
+  background-color: var(--color-neutral-white);
+  color: var(--color-secondary-red);
+}
+
+.promo__form {
+  background-color: var(--color-neutral-white);
+  max-width: 30rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--color-neutral-black);
+}
+
+.promo__form-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--color-secondary-red);
+}
+
+.promo__form-input {
+  border: 1px solid var(--color-neutral-black);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.promo__form-input,
+.promo__form-input::placeholder {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+}
+
+.promo__form-checkbox-label {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+}
+
+.promo__form-button {
+  padding: 0.5rem 2rem;
+  background-color: var(--color-secondary-orange);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.promo__form-button-text {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-neutral-white);
+}
+
+@media screen and (max-width: 710px) {
+  .promo .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .promo__buttons {
+    flex-direction: column;
+  }
+
+  .promo__button {
+    justify-content: center;
+  }
+}
+
+/* /promo */
