@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="dist/styles.min.css">
 
+  <!-- image -->
+  <link rel="preload" fetchpriority="high" as="image" href="/images/hero-img.webp" type="image/webp">
+  <link rel="preload" fetchpriority="high" as="image" href="/images/hero-img@2x.webp" type="image/webp">
+
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
@@ -79,7 +83,8 @@
             </a>
             <a href="#" class="section__button hero__button">
               <img src="./images/play-market-icon.webp" alt="Play Market icon" class="section__button-icon" width="25"
-                height="25" srcset="/images/play-market-icon.webp 1x, /images/play-market-icon@2x.webp 2x">
+                height="25" srcset="/images/play-market-icon.webp 1x, /images/play-market-icon@2x.webp 2x"
+                fetchpriority="high">
               <span class="section__button-text">Download</span>
             </a>
           </div>
@@ -219,7 +224,7 @@
         </div>
 
         <img src="./images/newsletter-img.webp" alt="smartwatch" class="newsletter__img" width="500" height="500"
-          srcset="/images/newsletter-img.webp 1x, /images/newsletter-img@2x.webp 2x">
+          srcset="/images/newsletter-img.webp 1x, /images/newsletter-img@2x.webp 2x" fetchpriority="low">
       </div>
     </section>
     <!-- /newsletter -->
