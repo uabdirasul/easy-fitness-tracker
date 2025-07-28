@@ -867,8 +867,6 @@ a {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .promo__form-input,
