@@ -1,49 +1,67 @@
 @font-face {
   font-family: "Permanent Marker";
-  font-display: auto;
+  font-display: swap;
   src: url("/fonts/PermanentMarker-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: "Montserrat";
-  font-display: auto;
+  font-display: swap;
   src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: "Montserrat";
-  font-display: auto;
+  font-display: swap;
   src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: "Montserrat";
-  font-display: auto;
+  font-display: swap;
   src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: "Montserrat";
-  font-display: auto;
+  font-display: swap;
   src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: "Montserrat";
-  font-display: auto;
+  font-display: swap;
   src: url("/fonts/Montserrat-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 :root {
@@ -64,12 +82,12 @@
 
   /* Font Variables */
   --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-permanent-marker: "Permanent Marker", cursive, serif;
   --font-weight-regular: 400; /* 16x usage */
   --font-weight-bold: 700; /* 32x usage */
   --font-weight-medium: 500; /* 30x usage */
   --font-weight-black: 900; /* 13x usage */
   --font-weight-semibold: 600; /* 4x usage */
-  --font-family-permanent-marker: "Permanent Marker", cursive;
   --font-weight-regular-pm: 400; /* 6x usage */
 }
 
@@ -123,7 +141,7 @@ a {
 }
 
 .section__button-text {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 900;
   font-size: 1rem;
   line-height: 100%;
@@ -320,7 +338,7 @@ a {
 }
 
 .hero__title {
-  font-family: "Permanent Marker";
+  font-family: var(--font-family-permanent-marker);
   font-weight: 400;
   font-size: clamp(3rem, 5vw, 4.375rem);
   line-height: 110%;
@@ -329,7 +347,7 @@ a {
 }
 
 .hero__description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 150%;
@@ -387,7 +405,7 @@ a {
 }
 
 .about__title {
-  font-family: "Permanent Marker";
+  font-family: var(--font-family-permanent-marker);
   font-weight: 400;
   font-size: clamp(1.7rem, 5vw, 2.875rem);
   line-height: 110%;
@@ -397,7 +415,7 @@ a {
 }
 
 .about__description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 400;
   font-size: clamp(1rem, 4vw, 1.125rem);
   line-height: 150%;
@@ -439,7 +457,7 @@ a {
 }
 
 .swiper-title {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 100%;
@@ -447,7 +465,7 @@ a {
 }
 
 .swiper-description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 400;
   font-size: 1rem;
   line-height: 100%;
@@ -483,7 +501,7 @@ a {
 }
 
 .newsletter__title {
-  font-family: "Permanent Marker";
+  font-family: var(--font-family-permanent-marker);
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 2.875rem);
   line-height: 105%;
@@ -492,7 +510,7 @@ a {
 }
 
 .newsletter__description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 400;
   font-size: clamp(0.875rem, 5vw, 1.125rem);
   line-height: 150%;
@@ -511,7 +529,7 @@ a {
 
 .newsletter__input,
 .newsletter__input::placeholder {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 145%;
@@ -545,7 +563,7 @@ a {
 
 .newsletter__button-text {
   white-space: nowrap;
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 900;
   font-size: 1rem;
   line-height: 100%;
@@ -587,7 +605,7 @@ a {
 }
 
 .stories__title {
-  font-family: "Permanent Marker";
+  font-family: var(--font-family-permanent-marker);
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 2.875rem);
   line-height: 110%;
@@ -616,7 +634,7 @@ a {
 }
 
 .stories__card-title {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 700;
   font-size: clamp(1.2rem, 5vw, 1.5rem);
   line-height: 150%;
@@ -624,7 +642,7 @@ a {
 }
 
 .stories__card-description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 400;
   font-size: clamp(0.875rem, 5vw, 1.125rem);
   line-height: 150%;
@@ -632,7 +650,7 @@ a {
 }
 
 .stories__card-date {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: clamp(0.875rem, 5vw, 1.125rem);
   line-height: 145%;
@@ -653,7 +671,7 @@ a {
 }
 
 .plans__description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: clamp(1rem, 5vw, 1.25rem);
   line-height: 145%;
@@ -663,7 +681,7 @@ a {
 }
 
 .plans__title {
-  font-family: "Permanent Marker";
+  font-family: var(--font-family-permanent-marker);
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 2.875rem);
   line-height: 110%;
@@ -686,7 +704,7 @@ a {
   padding: 0.5rem 1rem;
   width: 10ch;
   text-align: center;
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 110%;
@@ -738,7 +756,7 @@ a {
 }
 
 .plans__item-title {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 145%;
@@ -746,7 +764,7 @@ a {
 }
 
 .plans__item-price {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 150%;
@@ -761,7 +779,7 @@ a {
 }
 
 .plans__item-feature {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 145%;
@@ -774,7 +792,7 @@ a {
   background-color: var(--color-neutral-white);
   border-radius: 10px;
   padding: 1rem 3rem;
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 900;
   font-size: 1rem;
   line-height: 100%;
@@ -816,7 +834,7 @@ a {
 }
 
 .promo__title {
-  font-family: "Permanent Marker";
+  font-family: var(--font-family-permanent-marker);
   font-weight: 400;
   font-size: 2.875rem;
   line-height: 110%;
@@ -825,7 +843,7 @@ a {
 }
 
 .promo__description {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 150%;
@@ -860,7 +878,7 @@ a {
 }
 
 .promo__form-title {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 700;
   font-size: clamp(1.2rem, 5vw, 1.5rem);
   line-height: 150%;
@@ -877,7 +895,7 @@ a {
 
 .promo__form-input,
 .promo__form-input::placeholder {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 145%;
@@ -885,7 +903,7 @@ a {
 }
 
 .promo__form-checkbox-label {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 145%;
@@ -900,7 +918,7 @@ a {
 }
 
 .promo__form-button-text {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 900;
   font-size: 1rem;
   line-height: 100%;
@@ -951,7 +969,7 @@ a {
 }
 
 .footer__link-text {
-  font-family: Montserrat;
+  font-family: var(--font-family-montserrat);
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 100%;
