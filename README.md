@@ -36,8 +36,8 @@ The implementation achieves excellent performance metrics as verified by [PageSp
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/uabdirasul/marketplace.git
-cd marketplace
+git clone https://github.com/uabdirasul/easy-fitness-tracker.git
+cd easy-fitness-tracker
 ```
 
 ### Install Dependencies
@@ -83,11 +83,11 @@ npm run dev:watch
 
 ## Project Structure
 
-- `index.html` - Main HTML file for the NFT marketplace
+- `index.html` - Main HTML file for the Easy Fitness Tracking Landing Page
 - `styles/style.css` - CSS styles for the project
 - `scripts/main.js` - JavaScript for interactive elements
 - `fonts` - Web fonts used in the project
-- `images` - Image assets for the marketplace
+- `images` - Image assets for the website
 
 ## Browser Support
 
